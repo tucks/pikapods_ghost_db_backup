@@ -6,7 +6,7 @@ WORKDIR /app
 RUN pip install playwright
 
 # Run playwright install to ensure all browsers are downloaded
-RUN playwright install --with-deps
+RUN playwright install --with-deps chromium
 
 # Copy the Python script into the container
 COPY backup.py /app
